@@ -1,0 +1,8 @@
+name: git-delta
+description: "Install git-delta from a pre-compiled binary and add `delta` to system path."
+inputs: {}
+runs:
+  using: "composite"
+  steps:
+    - run: ${{ github.action_path }}/main.sh
+      shell: bash
